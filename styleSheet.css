@@ -1,0 +1,1016 @@
+* {
+    box-sizing: border-box;
+  }
+
+.wrapper {
+    background-color: white;
+  
+    min-height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* background-color: rgb(177, 172, 172); */
+    background: linear-gradient(to right top, rgb(43, 42, 42), rgb(230, 228, 228) );
+
+  }
+
+  body {
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+  
+    font-family: sans-serif;
+  }
+
+  header{
+      border-bottom: 1px solid black;
+  }
+
+  header li a {
+    color: aqua;
+    font-size: larger;
+  }
+
+  h1 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-right: 2rem;
+    border-right: 1px solid black;
+    justify-content: center;
+    color: aqua;
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    /* border: 1px solid black; */
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+  
+    /* background-color: turquoise; */
+    display: block;
+    padding: 20px 0;
+    margin: 0 10px;
+  
+    border-bottom: 5px solid transparent;
+}
+
+
+/* Header  */
+  nav li {
+      font-size: large;
+      width: 150px;
+      text-align: center;
+  }
+
+
+  nav a:hover {
+    border-bottom: 5px solid aqua;
+  }
+  
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+ul .heading {
+      font-size: large; 
+      list-style: none;
+      font-weight: bold;
+      text-align: center;
+}
+
+header {
+  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+#head-nav-bar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#head-nav-bar #logout{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(236, 85, 85, 0.815);
+  width: 75px;
+  height: 50px;
+  margin-right: 1rem;
+  color: white;
+  border-radius: 12px;
+
+}
+
+#head-nav-bar #logout a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+  /* Home */
+
+
+#main-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+  
+
+#home-boxes {
+    display: flex;
+    flex-direction: row;
+    height: 69vh;
+
+    /* justify-content: space-evenly; */
+
+}
+
+#side-tasks {
+  height: 73vh;
+  width: 20rem;
+  background: linear-gradient(to right top, rgb(15, 15, 15), rgba(97, 96, 96, 0.596) );
+  border: 1px solid black;
+  color: white;
+  overflow-y: auto;
+
+}
+
+
+#side-tasks h3{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#notes-container-home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+
+
+.title-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid black;
+
+}
+
+
+
+#notes-container-home a {
+text-decoration: none;
+color: black;
+font-size: large;
+font-weight: bold;
+
+}
+
+h2 {
+  top: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#notes-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box h3{
+  display: flex;
+  justify-content: center;
+}
+.box p{
+  margin-left: .25rem;
+}
+
+
+  .content{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+#intro {
+  font-size: large;
+}
+
+#top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right top, rgb(43, 42, 42), rgb(230, 228, 228) );
+}
+
+#top-bar p {
+  color: rgb(161, 236, 236);
+}
+
+/* planner */
+.planner-content{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+  .contentplanner{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+  }
+
+  #plannerButtons {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .box {
+      border: 1px solid black;
+      width: 15rem;
+      max-height: 20rem;
+      background-color: white;
+      border-radius: 20px;
+  }
+
+  /* homeside for navigation */
+  .homeside {
+    border: 1px solid black;
+    width: 10rem;
+    max-height: 45rem;
+    margin-right: 5px;
+    background-color: black;
+}
+
+
+/* planner main */
+.plannerbox {
+    border: 1px solid black;
+    width: 30rem;
+    max-height: 25rem;
+    background-color: white;
+    border-radius: 6px;
+    overflow-y: auto;
+}
+
+.plannerbox a{
+  font-size: larger;
+  text-decoration: none;
+  color:black;
+}
+
+/* table tbody {
+  display: block;
+  max-height: 35vh;
+  overflow-y: scroll;
+} */
+
+
+/* table thead, table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}  */
+
+
+/* width */
+
+
+
+.plannerbox thead th {
+  position: sticky;
+  top: 0;
+  background-color: grey;
+}
+table {
+  border-collapse: collapse;        
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px 15px;
+  border: 3px solid #48c8cc;
+}
+
+td {
+  overflow-wrap: anywhere;
+}
+
+
+.plannerbox span{
+  display: flex;
+  justify-content: center;
+}
+
+.plannerbox span {
+  margin: 5px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+.plannerbox .task-name-td{
+  overflow-wrap: break-word;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  flex-direction: row;
+  visibility: hidden;
+  border: 3px solid black;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+/* The form that pops up for the planner to add tasks. */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container div{
+   font-size: larger;
+
+}
+
+#form-input {
+  display:inline-block;
+  padding:15px 10px;
+  line-height:140%;
+
+}
+
+input#task-title {
+  width: 10rem;
+}
+
+.form-container .pop-form-buttons {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.form-container .pop-form-buttons input {
+  text-align: center;
+  height: 3rem;
+  width: 6rem;
+  margin: 0.5rem;
+  background: linear-gradient(to right top, rgb(7, 156, 156), rgb(100, 241, 241) );
+  font-size: large;
+  border-radius: 10px;
+}
+
+.form-container .pop-form-buttons button {
+  text-align: center;
+  height: 3rem;
+  width: 6rem;
+  margin: 0.5rem;
+  background: linear-gradient(to right top, rgb(7, 156, 156), rgb(100, 241, 241) );
+  font-size: large;
+  border-radius: 10px;
+}
+ 
+
+  /* buttons and row for planner. */
+
+  #buttonsrow {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    width: 100vw;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    text-align: center;
+    height: 3rem;
+    width: 6rem;
+    margin: .5rem;
+    /* background-color: aqua; */
+    background: linear-gradient(to right top, rgb(7, 156, 156), rgb(100, 241, 241) );
+    font-size: large;
+    border-radius: 10px;
+  }
+
+  .planner-side {
+    display: flex;
+    flex-direction: row;
+    height: 62vh;
+    justify-content: space-evenly;
+  }
+
+
+  /* Notes dropdown */
+
+
+  #courses {
+    position: relative;
+    display: inline-block;
+
+  }
+
+  .notes-box-row {
+    display: flex;
+    justify-content: center;
+    height: 62vh;
+
+  }
+
+
+
+  .notes-box {
+    border: 1px solid black;
+    max-width: 52rem;
+    max-height: 25rem;
+    background-color: white;
+    border-radius: 6px;
+    overflow-y: auto;
+}
+
+
+.notes-box .note-name-td{
+  overflow-wrap: break-word;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+/* The popup form - hidden by default */
+.form-popup-note {
+  flex-direction: row;
+  visibility: hidden;
+  border: 3px solid black;
+  background-color: aqua;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+/* The form that pops up for the planner to add tasks. */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container div{
+   font-size: larger;
+
+}
+
+input#summary {
+  display:inline-block;
+  padding:15px 10px;
+  line-height:140%;
+
+}
+
+input#note-name,#class {
+  width: 10rem;
+}
+
+#file-label{
+  padding: 10px;
+}
+
+.form-container-note .pop-form-buttons {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.form-container-note .pop-form-buttons input {
+  text-align: center;
+  height: 3rem;
+  width: 6rem;
+  margin: 0.5rem;
+  background: linear-gradient(to right top, rgb(7, 156, 156), rgb(100, 241, 241) );
+  font-size: large;
+  border-radius: 10px;
+}
+
+.form-container-note .pop-form-buttons button {
+  text-align: center;
+  height: 3rem;
+  width: 6rem;
+  margin: 0.5rem;
+  background: linear-gradient(to right top, rgb(7, 156, 156), rgb(100, 241, 241) );
+  font-size: large;
+  border-radius: 10px;
+}
+
+
+
+
+/* Notes box  */
+.notes-box thead th {
+  position: sticky;
+  top: 0;
+  background-color: grey;
+}
+table {
+  border-collapse: collapse;        
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px 5px;
+  border: 3px solid #48c8cc;
+}
+
+
+
+.notes-span{
+    display: flex;
+    justify-content: center;
+}
+  
+  .notes-span {
+    margin: 5px;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+
+
+  footer {
+    font-size: large;
+    color: rgb(0, 0, 0);
+  }
+
+
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
+
+
+/* share notes */
+
+
+.notes-box-row-share {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 77vh;
+
+}
+
+
+@media (min-width: 300px) and (max-width: 700px) {
+     
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plannerbox{
+    width: 50%;
+    max-height: 20rem;
+  }
+
+  .planner-side{
+    flex-wrap: wrap;
+  }
+
+
+}
+
+
+/* login page */
+
+#login-image_1 {
+  position: absolute;
+  width: 25%;
+  left: 2%;
+
+}
+
+#login-image_2 {
+  position: absolute;
+  width: 25%;
+  padding-left: 5px;
+  left: 72%;
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  border: 1px solid black;
+  width: 40%;
+  height: 50vh;
+  background: linear-gradient(to right top, rgb(43, 42, 42), rgb(146, 145, 145) );
+
+}
+
+.login-form a {
+  text-decoration: none;
+  color: black;
+}
+
+.login-form h1{
+  border: none;
+  text-align: center;
+  padding-right: 0px;
+}
+
+.login-form button {
+  background-color: aqua;
+  height: 50px;
+  width: 80px;
+  font-size: large;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* background-color: rgb(177, 172, 172); */
+    background: linear-gradient(to right top, rgb(43, 42, 42), rgb(230, 228, 228) );
+    justify-content: center;
+}
+
+.center-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.center-login label {
+  color: white
+}
+
+.login-label {
+  text-align: center;
+  font-size: larger;
+  color: aqua;
+
+}
+
+#login-button-div {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Register*/
+
+#register-image_1 {
+  position: absolute;
+  width: 25%;
+  padding-left: 5px;
+  left: 72%;
+
+}
+#register-image_2 {
+  position: absolute;
+  width: 25%;
+  padding-left: 5px;
+  left: 2%;
+
+}
+
+#register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* background-color: rgb(177, 172, 172); */
+  background: linear-gradient(to right top, rgb(43, 42, 42), rgb(230, 228, 228) );
+  justify-content: center;
+}
+
+.register-login-wrapper {
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* background-color: rgb(177, 172, 172); */
+  background: linear-gradient(to right top, rgb(43, 42, 42), rgb(230, 228, 228) );
+  justify-content: center;
+}
+
+
+#register-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#register-div h1 {
+  border-right: none;
+}
+
+
+#center-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black 1px;
+}
+
+
+.register-input {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.register-input input {
+  padding-bottom: 5px;
+}
+
+
+/* adminplanner */
+
+.plannerbox-admin {
+  border: 1px solid black;
+  width: 44rem;
+  max-height: 25rem;
+  background-color: white;
+  border-radius: 6px;
+  overflow-y: auto;
+}
+
+
+.plannerbox-admin a{
+font-size: larger;
+text-decoration: none;
+color:black;
+}
+
+
+.plannerbox-admin thead th {
+position: sticky;
+top: 0;
+background-color: grey;
+}
+
+
+.plannerbox-admin span{
+display: flex;
+justify-content: center;
+}
+
+.plannerbox-admin span {
+margin: 5px;
+font-size: larger;
+font-weight: bold;
+}
+
+
+.plannerbox-admin .task-name-td{
+overflow-wrap: break-word;
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+
+
+.plannerbox-admin th,
+td {
+  padding: 8px 5px;
+  border: 3px solid #48c8cc;
+}
+
+
+.username-wrap {
+  overflow-wrap: break-word;
+}
+
+  
+
+
+
+@media (min-width: 300px) and (max-width: 700px) {
+     
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notes-box {
+    overflow-x: scroll;
+  }
+
+  .plannerbox{
+    width: 100%;
+    max-height: 20rem;
+    overflow-x: scroll;
+  }
+
+  .plannerbox-admin{
+    width: 100%;
+    max-height: 20rem;
+    overflow-x: scroll;
+  }
+
+  .planner-side{
+    flex-wrap: wrap;
+  }
+
+
+  .box {
+    display: none;
+  }
+
+  #notes-div {
+    display: none;
+  }
+
+
+  #head-nav-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .login-form {
+    width: 80%;
+    height: 55vh;
+  }
+
+  .login-form h1 {
+    padding-top: 35px;
+  }
+
+  .form-popup {
+    position: absolute;
+    top: 84%;
+    left: 10%;
+    width: 41vh;
+
+
+  }
+
+  .register-login-wrapper .login-form {
+    height: 70vh;
+    padding-top: 0px;
+  }
+
+  .register-login-wrapper h1 {
+    padding-top: 0px;
+  }
+
+  .form-popup-note {
+    position: absolute;
+    top: 84%;
+    left: 10%;
+    width: 41vh;
+}
+
+  input#task.form-input {
+    width: 30vh;
+  }
+
+  input#task_title {
+    width: 30vh;
+  }
+
+  .plannerbox thead th {
+    position: static;
+
+}
+
+input#summary{
+  width: 30vh;
+}
+
+input#note_name{
+  width: 30vh;
+}
+
+.notes-box thead th {
+  position: static;
+
+}
+
+* {
+  overflow-x: hidden;
+}
+
+h1 {
+  padding-top: 200px;
+}
+
+#planner_1 {
+  display: none;
+}
+
+#planner_2 {
+  display: none;
+}
+
+.all_images {
+  display: none;
+}
+
+}
